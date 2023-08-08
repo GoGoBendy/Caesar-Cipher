@@ -31,4 +31,8 @@ print("Ciphertext:", ciphertext)
 decrypted_text = caesar_decipher(ciphertext, shift)
 print("Decrypted text:", decrypted_text)
 
+f = open("logfile.txt", "a")
+f.write("Plaintext: " + plaintext + " Ciphertext: " + ciphertext + " Decrypted text: " + decrypted_text + "\n")
+print("Log file updated")
+
 ww = input(print("Press enter to terminate"))
